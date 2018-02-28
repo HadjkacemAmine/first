@@ -56,9 +56,8 @@
                           <Entry Placeholder="Email" Keyboard="Email"></Entry>
                       </ViewCell>
                       <ViewCell >
-                    <Entry Placeholder="Site Web" x:Name="Entryweb" Keyboard="Url" Completed="Entryweb_OnCompleted">
-                     
-                    </Entry>
+                          
+                    <Entry Placeholder="Site Web" x:Name="Entryweb" Keyboard="Url" Completed="Entryweb_OnCompleted"/>
                       </ViewCell>
             </TableSection>
               </TableRoot>

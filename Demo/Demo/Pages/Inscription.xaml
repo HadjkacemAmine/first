@@ -16,6 +16,8 @@
         <ContentPage  Title="Pièces Justificatives">
             <views:PiécesJustificatifsView/>
         </ContentPage>
-        <ContentPage  Title="Synthèse"></ContentPage>
+        <ContentPage  Title="Synthèse">
+            <views:SyntheseView/>
+        </ContentPage>
     </TabbedPage.Children>
 </TabbedPage>

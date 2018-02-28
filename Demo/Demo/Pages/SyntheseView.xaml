@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:Demo.Pages;assembly=Demo"
+             x:Class="Demo.Pages.SyntheseView">
+  <ContentView.Content>
+      <ScrollView Orientation="Vertical">
+          <StackLayout Orientation="Vertical">
+              <pages:FrameView>
+                  <TableView  Intent="Settings" HasUnevenRows="True" HeightRequest="180">
+                      <TableRoot >
+                          <TableSection Title="Synthése">
+                                <ViewCell >
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="iconUser.png"/>
+                                        <Label Text="Nom et Prénom: " VerticalOptions="Center"/>
+                                        <Label Text="fouolen ben foulen" x:Name="nomPren" VerticalOptions="Center"/>
+                                    </StackLayout>
+
+
+                                </ViewCell>
+                                <ViewCell >
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="iconEmail.png"/>
+                                        <Label Text="Courriel: " VerticalOptions="Center"/>
+                                        <Label Text="aaa@nv.com" VerticalOptions="Center"></Label>
+                                  </StackLayout>
+                              </ViewCell>
+                            </TableSection>
+                      </TableRoot>
+                  </TableView>
+
+              </pages:FrameView>
+            </StackLayout>
+      </ScrollView>
+    </ContentView.Content>
+</ContentView>
