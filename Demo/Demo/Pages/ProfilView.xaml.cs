@@ -16,5 +16,11 @@ namespace Demo.Pages
 		{
 			InitializeComponent ();
 		}
-	}
+
+	    private async void Button_OnClicked(object sender, EventArgs e)
+	    {
+	       // var answer = await DisplayAlert("Question?", "Would you like to play a game", "Yes", "No");
+
+        }
+    }
 }

@@ -91,9 +91,8 @@
                         <TableRoot  >
                             <TableSection Title="CONTACTS" >
                                 <ViewCell >
-                                    <views:AdresseSiégeView/>
+                                        <pages:FrameView/>
                                 </ViewCell>
-
                             </TableSection>
                         </TableRoot>
                     </TableView>

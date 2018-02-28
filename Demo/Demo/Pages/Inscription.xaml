@@ -11,7 +11,11 @@
         </ContentPage>
 
         <ContentPage  Title="Profil" BackgroundImage="Home2.png">
+           <StackLayout Orientation="Vertical">
             <views:ProfilView/>
+                <Button Text="Continue..."
+                        Clicked="Button_OnClicked"></Button>
+           </StackLayout>
         </ContentPage>
         <ContentPage  Title="Pièces Justificatives">
             <views:PiécesJustificatifsView/>

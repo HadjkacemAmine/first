@@ -22,7 +22,8 @@ namespace Demo.Pages
 
 	    private async void Button_OnClicked(object sender, EventArgs e)
 	    {
-	        await Navigation.PushAsync(new Inscription());
+	       // var answer = await DisplayAlert("Question?", "Would you like to play a game", "Yes", "No");
+            await Navigation.PushAsync(new Inscription());
 	    }
 
 	    private async void Cnx(object sender, EventArgs e)
