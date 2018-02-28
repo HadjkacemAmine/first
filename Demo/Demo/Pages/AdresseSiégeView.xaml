@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:FrameView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:Demo.Pages;assembly=Demo"
+             x:Class="Infocham.Views.AdresseSiégeView" HeightRequest="600">
+
+
+    <TableView  Intent="Form" HasUnevenRows="True">
+              <TableRoot>
+                  <TableSection Title="Adresse Siége">
+                      <ViewCell >
+                          <StackLayout Orientation="Vertical">
+                        
+                              <Entry Placeholder="Adresse"/>
+                            </StackLayout>
+                          
+                      </ViewCell>
+                      <ViewCell >
+                          <StackLayout Orientation="Vertical">
+                             
+                              <Entry Placeholder="Code Postal"/>
+                          </StackLayout>
+
+                      </ViewCell>
+                      <ViewCell>
+                          <StackLayout Orientation="Vertical">
+                              <Label Text="Gouvernorat"></Label>
+                              <Picker Title="Gouvernorat">
+                                  <Picker.Items>
+                                      <x:String>Bizerte</x:String>
+                                      <x:String> Sousse</x:String>
+                                      
+                                  </Picker.Items>
+                              </Picker>
+                          </StackLayout>
+                      </ViewCell>
+                <ViewCell>
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Localité"></Label>
+                        <Picker Title="Localité">
+                            <Picker.Items>
+                                <x:String>a</x:String>
+                                <x:String>b</x:String>
+
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+                </ViewCell>
+                      <ViewCell>
+                    <Entry Placeholder="Téléphone" Keyboard="Telephone"></Entry>
+                      </ViewCell>
+                      <ViewCell>
+                    <Entry Placeholder="Fax" Keyboard="Telephone"></Entry>
+                      </ViewCell>
+                      <ViewCell>
+                          <Entry Placeholder="Email" Keyboard="Email"></Entry>
+                      </ViewCell>
+                      <ViewCell >
+                    <Entry Placeholder="Site Web" x:Name="Entryweb" Keyboard="Url" Completed="Entryweb_OnCompleted">
+                     
+                    </Entry>
+                      </ViewCell>
+            </TableSection>
+              </TableRoot>
+          </TableView>
+
+      </pages:FrameView>
+    
+    
+    
+    

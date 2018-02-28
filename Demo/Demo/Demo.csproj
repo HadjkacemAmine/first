@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Xam.Plugin.FilePicker" Version="1.1.0" />
+        <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
+        <PackageReference Include="XLabs.Forms" Version="2.0.5782" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\Rg.Plugins.Popup\Rg.Plugins.Popup.csproj" />
+    </ItemGroup>
+</Project>
