@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Demo.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class AdresseViewSiége : Frame
+	public partial class View1 
 	{
-		public AdresseViewSiége ()
+		public View1 ()
 		{
 			InitializeComponent ();
 		}

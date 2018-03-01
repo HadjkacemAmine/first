@@ -21,6 +21,7 @@ namespace Demo.Pages
 	    {
 	       // var answer = await DisplayAlert("Question?", "Would you like to play a game", "Yes", "No");
 
+
         }
     }
 }
