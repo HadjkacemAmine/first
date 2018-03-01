@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Rg.Plugins.Popup.Extensions;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -19,7 +19,12 @@ namespace Demo.Pages
 
         private async void Button_OnClicked(object sender, EventArgs e)
         {
-             await DisplayAlert("Question?", "Would you like to play a game", "Yes", "No");
+            var answer = await DisplayAlert("", "Siége et Usine ont les mêmes Coordonnées ?", "Oui", "Non");
+            if (answer.Equals(true))
+            {
+                var page = new ListViewPage();
+                await Navigation.PushPopupAsync(page);
+            }
 
         }
     }

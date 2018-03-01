@@ -79,7 +79,7 @@
                                 <ViewCell>
                                     <StackLayout Orientation="Vertical">
                                         <Label Text="Matricule fiscale"></Label>
-                                        <Entry Keyboard="Numeric"></Entry>
+                                        <Entry Keyboard="Numeric" ></Entry>
                                     </StackLayout>
                                 </ViewCell>
                             </TableSection>
@@ -91,7 +91,7 @@
                         <TableRoot  >
                             <TableSection Title="CONTACTS" >
                                 <ViewCell >
-                                        <pages:FrameView/>
+                                        <pages:View1/>
                                 </ViewCell>
                             </TableSection>
                         </TableRoot>

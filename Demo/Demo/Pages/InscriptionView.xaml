@@ -7,7 +7,7 @@
         <ScrollView Orientation="Vertical">
             <StackLayout Orientation="Vertical">
                 <pages:FrameView>
-                    <TableView  Intent="Settings" HasUnevenRows="True">
+                    <TableView  Intent="Settings" HasUnevenRows="True" HeightRequest="300">
                         <TableRoot >
                             <TableSection Title="IDENTIFICATION">
                                 <ViewCell >
@@ -23,7 +23,7 @@
                                 </ViewCell>
                                 <ViewCell>
 
-                                    <Entry Placeholder="Email" Keyboard="Email" />
+                                    <Entry Placeholder="Email" Keyboard="Email"/>
 
                                 </ViewCell>
                                 <ViewCell>
@@ -43,8 +43,8 @@
 
                </pages:FrameView>
               <pages:FrameView>
-                     
-                    <TableView  Intent="Settings">
+
+                    <TableView  Intent="Settings" HeightRequest="200">
                         <TableRoot >
                             <TableSection Title="COORDONNÉES DU PREMIER RESPONSABLE ">
                                 <ViewCell >
@@ -52,12 +52,12 @@
                                 </ViewCell>
                                 <ViewCell>
 
-                                    <Entry Placeholder="Prénom"/>
+                                    <Entry Placeholder="Prénom" />
 
                                 </ViewCell>
                                 <ViewCell>
 
-                                    <Entry Placeholder="Qualifications" Keyboard="Email"/>
+                                    <Entry Placeholder="Qualifications" Keyboard="Email" />
 
                                 </ViewCell>
 
@@ -70,7 +70,7 @@
                 <Button   BackgroundColor="#ED6A6A" TextColor="White"
                           Text="Suivant"
                           FontFamily="Catamaran"
-                          
+                          Clicked="Button_OnClicked"
                           BorderRadius="20"/>
             </StackLayout>
         </ScrollView>

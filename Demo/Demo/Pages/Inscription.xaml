@@ -17,10 +17,10 @@
                         Clicked="Button_OnClicked"></Button>
            </StackLayout>
         </ContentPage>
-        <ContentPage  Title="Pièces Justificatives">
+        <ContentPage  Title="Pièces Justificatives" BackgroundImage="Home2.png">
             <views:PiécesJustificatifsView/>
         </ContentPage>
-        <ContentPage  Title="Synthèse">
+        <ContentPage  Title="Synthèse" BackgroundImage="Home2.png">
             <views:SyntheseView/>
         </ContentPage>
     </TabbedPage.Children>

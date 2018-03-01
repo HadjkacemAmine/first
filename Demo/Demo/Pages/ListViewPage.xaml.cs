@@ -14,34 +14,7 @@ namespace Demo.Pages
         public ListViewPage()
         {
             InitializeComponent();
-            listView.ItemsSource = new List<string>
-            {
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView",
-                "Test ListView"
-            };
+           
         }
 
         private async void OnClose(object sender, EventArgs e)

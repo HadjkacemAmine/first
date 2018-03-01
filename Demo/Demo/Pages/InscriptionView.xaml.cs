@@ -16,5 +16,10 @@ namespace Demo.Pages
 		{
 			InitializeComponent ();
 		}
+
+	    private async void Button_OnClicked(object sender, EventArgs e)
+	    {
+	       
+	    }
 	}
 }

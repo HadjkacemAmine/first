@@ -7,14 +7,14 @@
       <ScrollView Orientation="Vertical">
           <StackLayout Orientation="Vertical">
               <pages:FrameView>
-                  <TableView  Intent="Settings" HasUnevenRows="True" HeightRequest="180">
+                  <TableView  Intent="Settings" HasUnevenRows="True" HeightRequest="160">
                       <TableRoot >
                           <TableSection Title="Synthése">
                                 <ViewCell >
                                     <StackLayout Orientation="Horizontal">
                                         <Image Source="iconUser.png"/>
                                         <Label Text="Nom et Prénom: " VerticalOptions="Center"/>
-                                        <Label Text="fouolen ben foulen" x:Name="nomPren" VerticalOptions="Center"/>
+                                        <Label Text="fouolen ben foulen" x:Name="lblNomPren" VerticalOptions="Center"/>
                                     </StackLayout>
 
 
@@ -23,9 +23,87 @@
                                     <StackLayout Orientation="Horizontal">
                                         <Image Source="iconEmail.png"/>
                                         <Label Text="Courriel: " VerticalOptions="Center"/>
-                                        <Label Text="aaa@nv.com" VerticalOptions="Center"></Label>
+                                        <Label Text="aaa@nv.com" VerticalOptions="Center" x:Name="lblCourriel"></Label>
                                   </StackLayout>
                               </ViewCell>
+                            </TableSection>
+                      </TableRoot>
+                  </TableView>
+
+              </pages:FrameView>
+              <pages:FrameView>
+                  <TableView  Intent="Settings" HasUnevenRows="True" HeightRequest="160">
+                      <TableRoot >
+                            <TableSection Title="Coordonnées du premier responsable de la société">
+                              <ViewCell >
+                                  <StackLayout Orientation="Horizontal">
+                                        <Image Source="iconResp.png"/>
+                                      <Label Text="Nom et Prénom: " VerticalOptions="Center"/>
+                                        <Label Text="fouolen ben foulen" x:Name="lblNomPrenResp" VerticalOptions="Center"/>
+                                  </StackLayout>
+
+
+                              </ViewCell>
+                              <ViewCell >
+                                  <StackLayout Orientation="Horizontal">
+                                        <Image Source="iconQual.png"/>
+                                      <Label Text="Qualification: " VerticalOptions="Center"/>
+                                      <Label Text="Directeur" VerticalOptions="Center" x:Name="lblQual"></Label>
+                                  </StackLayout>
+                              </ViewCell>
+                          </TableSection>
+                      </TableRoot>
+                  </TableView>
+
+              </pages:FrameView>
+              <pages:FrameView>
+                  <TableView  Intent="Settings" HasUnevenRows="True" HeightRequest="300">
+                      <TableRoot >
+                            <TableSection Title="Identification juridique">
+                              <ViewCell >
+                                  <StackLayout Orientation="Horizontal">
+                                        <Image Source="iconType.png"/>
+                                        <Label Text="Type opérateur économique: " VerticalOptions="Center"/>
+                                      <Label Text="producteur" x:Name="lblTypeOpEco" VerticalOptions="Center"/>
+                                  </StackLayout>
+
+
+                              </ViewCell>
+                              <ViewCell >
+                                  <StackLayout Orientation="Horizontal">
+                                        <Image Source="iconRais.png"/>
+                                      <Label Text="Raison Sociale: " VerticalOptions="Center"/>
+                                      <Label Text="Stramifexa" VerticalOptions="Center" x:Name="lblRaisSoc"></Label>
+                                  </StackLayout>
+                              </ViewCell>
+                                <ViewCell >
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="iconDenom.png"/>
+                                        <Label Text="Dénomination Commerciale: " VerticalOptions="Center"/>
+                                        <Label Text="Stramifexa" VerticalOptions="Center" x:Name="lblDenComm"></Label>
+                                    </StackLayout>
+                                </ViewCell>
+                                <ViewCell >
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="iconAct.png"/>
+                                        <Label Text="Secteur d'activité: " VerticalOptions="Center"/>
+                                        <Label Text="Construction" VerticalOptions="Center" x:Name="lblSectAct"></Label>
+                                    </StackLayout>
+                                </ViewCell>
+                                <ViewCell >
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="iconSouSect.png"/>
+                                        <Label Text="Sous-secteur: " VerticalOptions="Center"/>
+                                        <Label Text="Autre trav" VerticalOptions="Center" x:Name="lblSouSect"/>
+                                    </StackLayout>
+                                </ViewCell>
+                                <ViewCell >
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="iconMat.png"/>
+                                        <Label Text="Matricule fiscale: " VerticalOptions="Center"/>
+                                        <Label Text="7954/aaa/000" VerticalOptions="Center" x:Name="lblMat"/>
+                                    </StackLayout>
+                                </ViewCell>
                             </TableSection>
                       </TableRoot>
                   </TableView>
