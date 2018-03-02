@@ -36,5 +36,6 @@
         </ContentPage>
 
         <ContentPage Title="Other .."/>
+        <ContentPage Title="Settings"></ContentPage>
         </TabbedPage.Children>
     </TabbedPage>
