@@ -1,4 +1,6 @@
 ﻿using System;
+using Demo.Views;
+
 using Rg.Plugins.Popup.Extensions;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -33,7 +35,7 @@ namespace Demo.Views
                                                               "        Un mail Contenant vos identifiants a été envoyé afin d\'activer votre session sur le portail infocham \r\n   " +
                                                               "             Merci Pour votre confiance.","FERMER");
            
-                await Navigation.PushModalAsync(new MasterDetailPage1());
+                await Navigation.PushModalAsync(new MasterDetailHome());
             
         }
     }

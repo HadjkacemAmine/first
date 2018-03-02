@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Demo.Pages;
 using Xamarin.Forms;
 using HomePage = Demo.Views.HomePage;
 

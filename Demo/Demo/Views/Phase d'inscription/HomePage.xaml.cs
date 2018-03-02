@@ -8,11 +8,11 @@ namespace Demo.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class HomePage : ContentPage
 	{
-	    private Pages.LoginPopupPage _connexionMembre;
+	    private LoginPopupPage _connexionMembre;
 		public HomePage ()
 		{
 			InitializeComponent ();
-            _connexionMembre = new Pages.LoginPopupPage();
+            _connexionMembre = new LoginPopupPage();
 		}
 
 	    private async void Button_OnClicked(object sender, EventArgs e)

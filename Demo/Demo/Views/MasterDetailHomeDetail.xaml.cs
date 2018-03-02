@@ -1,11 +1,17 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Demo.Views.MasterDetailPage
+namespace Demo.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MasterDetailHomeDetail : TabbedPage
+    public partial class MasterDetailHomeDetail 
     {
         public MasterDetailHomeDetail()
         {
@@ -24,9 +30,9 @@ namespace Demo.Views.MasterDetailPage
 
         public ObservableCollection<string> Items { get; set; }
 
-          
 
-          
+
+
 
         async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
         {

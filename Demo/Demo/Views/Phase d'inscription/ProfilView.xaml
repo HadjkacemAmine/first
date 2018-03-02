@@ -48,7 +48,7 @@
                                         <Label Text="Secteur d'Activité "/>
                                         <Picker Title="Construction" >
                                             <Picker.Items>
-                                                <system:String>aaa</x:String>
+                                                <x:String>aaa</x:String>
                                                 <x:String>bbbbb</x:String>
                                                 <x:String>cccc</x:String>
                                             </Picker.Items>
@@ -93,7 +93,7 @@
                         <TableRoot  >
                             <TableSection Title="CONTACTS" >
                                 <ViewCell >
-                                        <pages:View1/>
+                                    <views1:View1/>
                                 </ViewCell>
                             </TableSection>
                         </TableRoot>

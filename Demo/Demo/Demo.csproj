@@ -12,21 +12,18 @@
       <ProjectReference Include="..\..\Rg.Plugins.Popup\Rg.Plugins.Popup.csproj" />
     </ItemGroup>
     <ItemGroup>
-      <Compile Update="Views\MasterDetailPage\MasterDetailHomeMenuItem.cs">
+      <Compile Update="Views\MasterDetailHomeMenuItem.cs">
         <SubType>Code</SubType>
       </Compile>
     </ItemGroup>
     <ItemGroup>
-      <EmbeddedResource Update="Views\ListViewPage1.xaml">
+      <EmbeddedResource Update="Views\MasterDetailHome.xaml">
         <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       </EmbeddedResource>
-      <EmbeddedResource Update="Views\MasterDetailPage\MasterDetailHome.xaml">
+      <EmbeddedResource Update="Views\MasterDetailHomeDetail.xaml">
         <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       </EmbeddedResource>
-      <EmbeddedResource Update="Views\MasterDetailPage\MasterDetailHomeDetail.xaml">
-        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Views\MasterDetailPage\MasterDetailHomeMaster.xaml">
+      <EmbeddedResource Update="Views\MasterDetailHomeMaster.xaml">
         <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       </EmbeddedResource>
       <EmbeddedResource Update="Views\Phase d'inscription\SyntheseView.xaml">

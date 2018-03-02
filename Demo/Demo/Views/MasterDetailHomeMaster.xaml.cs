@@ -1,10 +1,16 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Demo.Views.MasterDetailPage
+namespace Demo.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MasterDetailHomeMaster : ContentPage
@@ -27,11 +33,11 @@ namespace Demo.Views.MasterDetailPage
             {
                 MenuItems = new ObservableCollection<MasterDetailHomeMenuItem>(new[]
                 {
-                    new MasterDetailHomeMenuItem { Id = 0, Title = "Utilisateurs" },
-                    new MasterDetailHomeMenuItem { Id = 1, Title = "Adhésion" },
-                    new MasterDetailHomeMenuItem { Id = 2, Title = "Dossier Technique" },
-                    new MasterDetailHomeMenuItem { Id = 3, Title = "Certificat d'origine" },
-                    
+                    new MasterDetailHomeMenuItem { Id = 0, Title = "Page 1" },
+                    new MasterDetailHomeMenuItem { Id = 1, Title = "Page 2" },
+                    new MasterDetailHomeMenuItem { Id = 2, Title = "Page 3" },
+                    new MasterDetailHomeMenuItem { Id = 3, Title = "Page 4" },
+                    new MasterDetailHomeMenuItem { Id = 4, Title = "Page 5" },
                 });
             }
             
