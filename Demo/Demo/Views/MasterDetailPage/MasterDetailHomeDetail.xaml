@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:Demo.Views;assembly=Demo"
+             x:Class="Demo.Views.MasterDetailPage.MasterDetailHomeDetail"
+             Title="Detail">
+  <TabbedPage.Children>
+      <ContentPage Title="Accueil">
+          <ListView x:Name="MyListView"
+                    ItemsSource="{Binding Items}"
+                    ItemTapped="Handle_ItemTapped"
+                    CachingStrategy="RecycleElement">
+
+              <!--Built in Cells-->
+              <!--<ListView.ItemTemplate>
+                  <DataTemplate>
+                      <TextCell Text="{Binding .}" />
+                  </DataTemplate>
+              </ListView.ItemTemplate>-->
+
+              <!--Custom View Cells-->
+            
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <StackLayout>
+            <Label Text="{Binding Text}" 
+                   Style="{DynamicResource ListItemTextStyle}" />
+            <Label Text="{Binding Detail}" 
+                   Style="{DynamicResource ListItemDetailTextStyle}"/>
+          </StackLayout>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+
+          </ListView>
+        </ContentPage>
+
+        <ContentPage Title="Other .."/>
+
+
+    </TabbedPage.Children>
+</TabbedPage> 

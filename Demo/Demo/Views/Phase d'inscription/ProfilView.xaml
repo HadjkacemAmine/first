@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xl="clr-namespace:XLabs;assembly=XLabs.Forms"
+             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             xmlns:pages="clr-namespace:Demo.Pages;assembly=Demo"
+             xmlns:views="clr-namespace:Infocham.Views;assembly=Demo"
+             xmlns:views1="clr-namespace:Demo.Views;assembly=Demo"
+             xmlns:system="clr-namespace:System;assembly=netstandard"
+             x:Class="Demo.Views.ProfilView">
+    <ContentView.Content>
+
+        <ScrollView Orientation="Vertical" >
+            <StackLayout  >
+
+                <views1:FrameView  HeightRequest="100"  >
+                    <TableView  Intent="Form" HasUnevenRows="True" >
+                        <TableRoot>
+                            <TableSection Title="IDENTIFICATION">
+                                <ViewCell >
+                                    <Label Text="Date d'inscription"/>
+                                </ViewCell>
+                            </TableSection>
+                        </TableRoot>
+                    </TableView>
+
+                </views1:FrameView>
+                <views1:FrameView HeightRequest="600">
+                    <TableView  Intent="Form" HasUnevenRows="True">
+                        <TableRoot >
+                            <TableSection Title="IDENTITE JURIDIQUE" >
+                                <ViewCell >
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="Raison Sociale"/>
+                                        <Entry />
+                                    </StackLayout>
+                                </ViewCell>
+
+                                <ViewCell>
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="Dénomination Commerciale"></Label>
+                                        <Entry />
+                                    </StackLayout>
+
+                                </ViewCell>
+                                <ViewCell>
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="Secteur d'Activité "/>
+                                        <Picker Title="Construction" >
+                                            <Picker.Items>
+                                                <system:String>aaa</x:String>
+                                                <x:String>bbbbb</x:String>
+                                                <x:String>cccc</x:String>
+                                            </Picker.Items>
+                                        </Picker>
+                                    </StackLayout>
+                                </ViewCell>
+                                <ViewCell>
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="Sous-Secteur"></Label>
+                                        <Picker Title="Sous-Secteur">
+                                            <Picker.Items>
+                                                <x:String>aaa</x:String>
+                                                <x:String>bbbbb</x:String>
+                                                <x:String>cccc</x:String>
+
+                                            </Picker.Items>
+                                        </Picker>
+                                    </StackLayout>
+                                </ViewCell>
+                                <ViewCell>
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="Type d'opérateur économique "></Label>
+                                        <controls:CheckBox DefaultText="Autre" />
+                                        <controls:CheckBox DefaultText="Exportateur"/>
+                                        <controls:CheckBox DefaultText="Producteur"/>
+                                        <controls:CheckBox DefaultText="Commerce international"/>
+                                    </StackLayout>
+                                </ViewCell>
+
+                                <ViewCell>
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="Matricule fiscale"></Label>
+                                        <Entry Keyboard="Numeric" ></Entry>
+                                    </StackLayout>
+                                </ViewCell>
+                            </TableSection>
+                        </TableRoot>
+                    </TableView>
+                </views1:FrameView>
+                <views1:FrameView  HeightRequest="700">
+                    <TableView  Intent="Form" HasUnevenRows="True" >
+                        <TableRoot  >
+                            <TableSection Title="CONTACTS" >
+                                <ViewCell >
+                                        <pages:View1/>
+                                </ViewCell>
+                            </TableSection>
+                        </TableRoot>
+                    </TableView>
+
+                </views1:FrameView>
+            </StackLayout>
+        </ScrollView>
+
+    </ContentView.Content>
+    
+</ContentView>

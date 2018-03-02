@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:pages1="clr-namespace:Demo.Pages;assembly=Demo"
+             xmlns:views="clr-namespace:Demo.Views;assembly=Demo"
+             x:Class="Demo.Views.ListViewPage">
+  <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" Padding="20, 20, 20, 20">
+    <StackLayout BackgroundColor="White" Orientation="Vertical">
+            <views:FrameView>
+                <TableView  Intent="Form" HasUnevenRows="True">
+                    <TableRoot>
+                        <TableSection Title="Adresse Siége">
+                            <ViewCell >
+                                <StackLayout Orientation="Vertical">
+
+                                    <Entry Placeholder="Adresse" />
+                                </StackLayout>
+
+                            </ViewCell>
+                            <ViewCell >
+                                <StackLayout Orientation="Vertical">
+
+                                    <Entry Placeholder="Code Postal" />
+                                </StackLayout>
+
+                            </ViewCell>
+                            <ViewCell>
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="Gouvernorat"></Label>
+                                    <Picker Title="Gouvernorat">
+                                        <Picker.Items>
+                                            <x:String>Bizerte</x:String>
+                                            <x:String>Sousse</x:String>
+
+                                        </Picker.Items>
+                                    </Picker>
+                                </StackLayout>
+                            </ViewCell>
+                            <ViewCell>
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="Localité"></Label>
+                                    <Picker Title="Localité">
+                                        <Picker.Items>
+                                            <x:String>a</x:String>
+                                            <x:String>b</x:String>
+
+                                        </Picker.Items>
+                                    </Picker>
+                                </StackLayout>
+                            </ViewCell>
+                            <ViewCell>
+                                <Entry Placeholder="Téléphone" Keyboard="Telephone" ></Entry>
+                            </ViewCell>
+                            <ViewCell>
+                                <Entry Placeholder="Fax" Keyboard="Telephone" ></Entry>
+                            </ViewCell>
+                            
+                        </TableSection>
+                    </TableRoot>
+                </TableView>
+            </views:FrameView>
+    </StackLayout>
+    <Button Text="Close" TextColor="#A9D1DE" Clicked="OnClose"></Button>
+  </StackLayout>
+</pages:PopupPage>

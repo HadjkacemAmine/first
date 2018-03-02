@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:views="clr-namespace:Demo.Pages;assembly=Demo"
+            xmlns:views1="clr-namespace:Demo.Views;assembly=Demo"
+            x:Class="Demo.Views.Inscription">
+    <TabbedPage.Children>
+        <ContentPage Title="Inscription" BackgroundImage="Home2.png" >
+            <ContentPage.Content>
+                <views1:InscriptionView/>
+            </ContentPage.Content>
+        </ContentPage>
+
+        <ContentPage  Title="Profil" BackgroundImage="Home2.png">
+           <StackLayout Orientation="Vertical">
+            <views1:ProfilView/>
+                <Button Text="Continue..."
+                        Clicked="Button_OnClicked"></Button>
+           </StackLayout>
+        </ContentPage>
+        <ContentPage  Title="Pièces Justificatives" BackgroundImage="Home2.png">
+            <views1:PiécesJustificatifsView/>
+        </ContentPage>
+        <ContentPage  Title="Synthèse" BackgroundImage="Home2.png">
+            <StackLayout Orientation="Vertical">
+            <views1:SyntheseView/>
+            <Button Clicked="Button_OnClicked1"></Button>
+            </StackLayout>
+        </ContentPage>
+    </TabbedPage.Children>
+</TabbedPage>
